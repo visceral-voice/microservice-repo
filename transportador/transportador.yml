@@ -1,6 +1,6 @@
 spring:
   datasource:
-    password: root
+    password: Srpp@1973
     username: root
     url: 'jdbc:mysql://localhost:3306/transportador'
   jpa:
