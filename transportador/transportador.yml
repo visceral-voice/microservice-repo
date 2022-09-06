@@ -1,8 +1,12 @@
 spring:
   datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
     password: Srpp@1973
     username: root
-    url: 'jdbc:mysql://localhost:3306/transportador'
+    url: 'jdbc:mysql://localhost:3306/transportador?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC'
   jpa:
     hibernate:
       ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
