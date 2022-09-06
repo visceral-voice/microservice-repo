@@ -2,7 +2,11 @@ spring:
   datasource:
     password: Srpp@1973
     username: root
-    url: 'jdbc:mysql://localhost:3306/loja'
+    url: 'jdbc:mysql://localhost:3306/loja?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC'
+    driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     hibernate:
       ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
